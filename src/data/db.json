@@ -1,0 +1,46 @@
+{
+    "hanbao": [
+        {
+            "goodsId":1,
+            "goodsImg":"../assets/images/logo.png",
+            "goodsName":"香辣鸡腿堡",
+            "price":18
+        },
+        {
+            "goodsId":1,
+            "goodsImg":"../assets/images/logo.png",
+            "goodsName":"香辣鸡腿堡",
+            "price":18
+        },
+        {
+            "goodsId":1,
+            "goodsImg":"../assets/images/logo.png",
+            "goodsName":"香辣鸡腿堡",
+            "price":18
+        }
+    ],
+    "xiaochi": [
+        {
+            "goodsId":1,
+            "goodsImg":"../assets/images/logo.png",
+            "goodsName":"香辣鸡腿堡",
+            "price":18
+        }
+    ],
+    "yinliao": [
+        {
+            "goodsId":1,
+            "goodsImg":"../assets/images/logo.png",
+            "goodsName":"香辣鸡腿堡",
+            "price":18
+        }
+    ],
+    "tiandian": [
+        {
+            "goodsId":1,
+            "goodsImg":"../assets/images/logo.png",
+            "goodsName":"香辣鸡腿堡",
+            "price":18
+        }
+    ]
+}
