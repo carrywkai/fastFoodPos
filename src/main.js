@@ -5,8 +5,11 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import axios from 'axios'
 
 Vue.config.productionTip = false
+// 将axios挂载在vue原型上，全局使用
+Vue.prototype.$axios = axios
 
 Vue.use(ElementUI);
 

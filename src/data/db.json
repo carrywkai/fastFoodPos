@@ -2,44 +2,110 @@
     "hanbao": [
         {
             "goodsId":1,
-            "goodsImg":"../assets/images/logo.png",
+            "goodsImg":"./static/assets/images/hanbao01.jpg",
             "goodsName":"香辣鸡腿堡",
-            "price":18
+            "price":12
         },
         {
-            "goodsId":1,
-            "goodsImg":"../assets/images/logo.png",
-            "goodsName":"香辣鸡腿堡",
-            "price":18
+            "goodsId":2,
+            "goodsImg":"./static/assets/images/hanbao02.jpg",
+            "goodsName":"田园鸡腿堡",
+            "price":15
         },
         {
-            "goodsId":1,
-            "goodsImg":"../assets/images/logo.png",
-            "goodsName":"香辣鸡腿堡",
+            "goodsId":3,
+            "goodsImg":"./static/assets/images/hanbao03.jpg",
+            "goodsName":"双层鸡腿堡",
+            "price":13
+        },
+        {
+            "goodsId":4,
+            "goodsImg":"./static/assets/images/hanbao04.jpg",
+            "goodsName":"奶油鸡腿堡",
+            "price":15
+        },
+        {
+            "goodsId":5,
+            "goodsImg":"./static/assets/images/hanbao05.jpg",
+            "goodsName":"培根汉堡",
             "price":18
         }
     ],
     "xiaochi": [
         {
-            "goodsId":1,
-            "goodsImg":"../assets/images/logo.png",
-            "goodsName":"香辣鸡腿堡",
-            "price":18
+            "goodsId":6,
+            "goodsImg":"./static/assets/images/xiaochi01.jpg",
+            "goodsName":"基围虾",
+            "price":12
+        },
+        {
+            "goodsId":7,
+            "goodsImg":"./static/assets/images/xiaochi02.jpg",
+            "goodsName":"薯条",
+            "price":8
+        },
+        {
+            "goodsId":8,
+            "goodsImg":"./static/assets/images/xiaochi03.jpg",
+            "goodsName":"油条",
+            "price":6
+        },
+        {
+            "goodsId":9,
+            "goodsImg":"./static/assets/images/xiaochi04.jpg",
+            "goodsName":"香辣鸡腿",
+            "price":9
+        },
+        {
+            "goodsId":10,
+            "goodsImg":"./static/assets/images/xiaochi05.jpg",
+            "goodsName":"鸡块",
+            "price":10
+        },
+        {
+            "goodsId":11,
+            "goodsImg":"./static/assets/images/xiaochi06.jpg",
+            "goodsName":"香辣鸡翅",
+            "price":12
+        },
+        {
+            "goodsId":12,
+            "goodsImg":"./static/assets/images/xiaochi07.jpg",
+            "goodsName":"红豆派",
+            "price":8
         }
     ],
     "yinliao": [
         {
-            "goodsId":1,
-            "goodsImg":"../assets/images/logo.png",
-            "goodsName":"香辣鸡腿堡",
-            "price":18
+            "goodsId":13,
+            "goodsImg":"./static/assets/images/yinliao01.jpg",
+            "goodsName":"冬瓜茶",
+            "price":12
+        },
+        {
+            "goodsId":14,
+            "goodsImg":"./static/assets/images/yinliao02.jpg",
+            "goodsName":"抹茶咖啡",
+            "price":16
+        },
+        {
+            "goodsId":15,
+            "goodsImg":"./static/assets/images/yinliao03.jpg",
+            "goodsName":"蓝精灵",
+            "price":14
         }
     ],
     "tiandian": [
         {
-            "goodsId":1,
-            "goodsImg":"../assets/images/logo.png",
-            "goodsName":"香辣鸡腿堡",
+            "goodsId":16,
+            "goodsImg":"./static/assets/images/tiandian01.jpg",
+            "goodsName":"甜筒",
+            "price":12
+        },
+        {
+            "goodsId":17,
+            "goodsImg":"./static/assets/images/tiandian02.jpg",
+            "goodsName":"球",
             "price":18
         }
     ]
