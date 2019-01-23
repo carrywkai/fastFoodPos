@@ -36,9 +36,9 @@
               </div>
               <!-- 挂单 删除 结账 按钮 -->
               <div class="div-btn">
-                <el-button type="warning">挂单</el-button>
-                <el-button type="danger">结账</el-button>
-                <el-button type="success">删除</el-button>
+                <el-button type="warning" @click='sendOut'>挂单</el-button>
+                <el-button type="danger" @click="checkout">结账</el-button>
+                <el-button type="success" @click='deleteAllGoods'>删除</el-button>
               </div>
             </el-tab-pane>
             <el-tab-pane label="挂单">挂单</el-tab-pane>
@@ -199,13 +199,7 @@ export default {
     }
   },
   methods: {
-    headleDelete(index, row) {
-      console.log(index, row);
-    },
-    headleAdd(index, row) {
-      console.log(index, row);
-    },
-
+    
     // 点击商品添加都商品栏当中
     addTableData (goods) { 
         // 判断该商品在不在当前商品栏中
@@ -241,20 +235,64 @@ export default {
       this.totalCount = 0;
       // 循环遍历 tableData 数组，进行计算
       for (let value of this.tableData.values()) {
-        console.log(value)
+        // console.log(value)
         this.totalPrice += value.price * value.count;
         this.totalCount += value.count;
       }
 
-    }
+    },
 
     // 删除单个商品
-
+    headleDelete(index, row) {
+      // console.log(index, row);
+      // console.log(row.count);
+      this.tableData = this.tableData.filter(o => row.goodsId != o.goodsId);
+      // 重新计算总的价格
+      this.countAllPrice();
+    },
     // 增加单个商品
+    headleAdd(index, row) {
+      // console.log(index, row);
+      // 将当前元素的count加1，在计算一遍总数量 和 金额
+      let newArr = this.tableData.filter(o => row.goodsId == o.goodsId);
+      newArr[0].count++;
 
+      this.countAllPrice();
+    },
     // 删除全部商品
+    deleteAllGoods () {
+      this.totalPrice = 0;
+      this.totalCount = 0;
+      this.tableData = [];
+    },
+
+    // 结账
+    checkout () {
+      // 判断总金额是否为 0
+      if (this.totalPrice == 0 && this.totalCount == 0) {
+        this.$message({
+          type: 'info',
+          message: '请选择商品'
+        })
+      } else {
+        this.$message({
+          type: 'success',
+          message: `结账成功,总共消费${this.totalPrice}元`
+        });
+      }
+
+      // 结完张后，清空列表
+      this.deleteAllGoods();
+
+    },
 
     // 挂单
+    sendOut () {
+      this.$message({
+        type:'warning',
+        message: `挂单成功`
+      })
+    }
   },
   mounted: function() {
     // 当页面加载完时执行
